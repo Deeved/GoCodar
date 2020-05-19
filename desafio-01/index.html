@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- css interno -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>GoCodar | Desafio 01</title>
+</head>
+<body>
+    <div class="container">
+        
+        <nav>
+            <ul class="categoria">
+                <li>
+                    <a href="#contas"><span class="material-icons">contacts</span>Contas</a>
+                </li>
+
+                <li>
+                    <a href="#tela"><span class="material-icons">tv</span>Tela</a>
+                </li>
+
+                <li>
+                    <a href="#info"><span class="material-icons">info</span>Informações do Sistema</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-itens">
+            
+            <!-- CONTAS -->
+            <div class="itens" id="contas">
+                <ul>
+                    <li>                        
+                        <label for="contas-add"><a><span class="material-icons">person_add</span>Adicionar Usuário</a></label>
+                    </li>
+
+                    <li>                        
+                        <label for="contas-edit"><a><span class="material-icons">contact_mail</span>Editar Usuário</a></label>
+                    </li>
+
+                    <li>
+                        <label for="contas-remove"><a><span class="material-icons">person_add_disabled</span>Excluir Usuário</a></label>
+                    </li>
+
+                </ul>
+
+                <div class="conteudo-item">
+                    <input type="radio" id="contas-add" name="rd"> 
+                    <div>
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="material-icons">add_circle</span>
+                                    Conteúdo Adicionar
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <input type="radio" id="contas-edit" name="rd"> 
+                    <div>
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="material-icons">edit</span>
+                                    Conteúdo Edição
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <input type="radio" id="contas-remove" name="rd">
+                    <div>
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="material-icons">delete</span>
+                                    Conteúdo Deletar
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- TELAS -->
+
+            <div class="itens" id="tela">
+                <ul>
+                    <li>                        
+                        <label for="tela-device"><a><span class="material-icons">devices_other</span>Conectar a um dispositivo</a></label>
+                    </li>
+
+                    <li>                        
+                        <label for="tela-pfundo"><a><span class="material-icons">panorama</span>Plano de fundo</a></label>
+                    </li>
+
+                    <li>
+                        <label for="tela-config"><a><span class="material-icons">settings</span>Configurações</a></label>
+                    </li>
+
+                </ul>
+
+                <div class="conteudo-item">
+                    <input type="radio" id="tela-device" name="rd"> 
+                    <div>
+                        <ul>
+                            <li>
+                                <a><span class="material-icons">bluetooth</span>
+                                    Bluetooth
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <input type="radio" id="tela-pfundo" name="rd"> 
+                    <div>
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="material-icons">insert_photo</span>
+                                    Alterar imagem
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <input type="radio" id="tela-config" name="rd">
+                    <div>
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="material-icons">3d_rotation</span>
+                                    Rotacionar Tela
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="material-icons">tv_off</span>
+                                    Suspender Tela
+                                    <i class="material-icons" id="check">check</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+</body>
+</html>

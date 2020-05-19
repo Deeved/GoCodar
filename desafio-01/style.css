@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-right: 8px;
+    
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    background-color: darkgrey;
+}
+
+.container nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.container nav .categoria {
+    flex: 1;
+    list-style-type: none;
+    background-color: #F9F9F9;    
+}
+
+.container nav .categoria li{
+    border-radius: 8px;
+    margin: 8px;
+
+}
+
+.container nav .categoria li:hover{
+    background-color: #5AA9E6;
+}
+
+.container nav .categoria li a{
+    display: block;
+    color: #252627;
+    padding: 8px;
+}
+
+.container nav .categoria li a:hover{
+    display: block;
+    color: #F9F9F9;
+}
+
+
+.container .container-itens{
+    display: flex;
+    flex: 3;
+    background-color: #F9F9F9;
+    margin: 8px;
+    border-radius: 8px;
+    
+}
+
+.container-itens .itens{
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+}
+
+.itens ul{
+    display: flex;
+    flex-direction: column;  
+    flex: 1;
+    border-right: 1px solid lightgray; 
+}
+
+.intens .conteudo-item{
+    flex: 2;
+}
+
+.itens ul li{
+    margin: 4px;
+    border-radius: 8px;
+    background-color: lightgray;
+}
+
+.itens ul li a{
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    
+}
+
+.itens ul li a:hover{
+    background-color: #5AA9E6;
+    color: #F9F9F9;
+    border-radius: 8px;
+    
+}
+
+.conteudo-item{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.conteudo-item input[type="radio"]:not(:checked) + div{
+    display: none;
+}
+
+.conteudo-item div{
+    flex: 2;
+    
+}
+
+.conteudo-item div ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightgray;
+    margin: 4px;
+    border-radius: 8px;
+
+}
+
+.conteudo-item div ul li a{
+    flex: auto;
+    padding: 8px;  
+}
+
+#check{ 
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    font-size: small;
+    border-radius: 50%;
+    background-color: #5AA9E6;
+    color: #F9F9F9;
+}
+
+.container-itens .itens:not(:target){
+    display: none;
+}
